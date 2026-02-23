@@ -23,3 +23,7 @@ body {
   border: 1px black solid;
   background-color: aquamarine;
 }
+
+.grid-item.hovered-grid-item {
+  background-color: orange;
+}

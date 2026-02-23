@@ -6,6 +6,9 @@ function generateGrid(gridSize) {
       const gridItem = document.createElement("div");
       gridItem.classList.add("grid-item");
       gridItem.style.flexBasis = `${100 / gridSize}%`
+      gridItem.addEventListener("mouseenter", (e) => {
+        e.target.classList.add("hovered-grid-item");
+      })
       container.appendChild(gridItem)
     }
   }
