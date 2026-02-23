@@ -2,7 +2,7 @@ const container = document.querySelector("#container");
 const button = document.querySelector("button");
 
 function generateGrid(gridSize) {
-  container.textContent="";
+  container.textContent = "";
   gridSize = Math.min(gridSize, 100);
   for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
@@ -12,7 +12,7 @@ function generateGrid(gridSize) {
       gridItem.addEventListener("mouseenter", (e) => {
         e.target.classList.add("hovered-grid-item");
       })
-      container.appendChild(gridItem)
+      container.appendChild(gridItem);
     }
   }
 }
