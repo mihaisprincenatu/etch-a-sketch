@@ -27,3 +27,21 @@ body {
 .grid-item.hovered-grid-item {
   background-color: orange;
 }
+
+button {
+  display: block;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #007000;
+}
+
+button:active {
+  background-color: #008600;
+}
