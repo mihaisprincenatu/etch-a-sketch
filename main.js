@@ -19,11 +19,13 @@ function generateGrid(gridSize) {
 
 button.addEventListener("click", (e) => {
   let newGridSize = +prompt("Enter grid size (up to 100):", 16);
-  while (isNaN(newGridSize)) {
-    newGridSize = +prompt("Not a number, try again. Enter grid size (up to 100):", 16);
-  }
-  while (newGridSize <= 0) {
-    newGridSize = +prompt("Positive values only. Enter grid size (up to 100):", 16);
+  while (isNaN(newGridSize) || newGridSize <= 0) {
+    if (isNaN(newGridSize)) {
+      newGridSize = +prompt("Not a number, try again. Enter grid size (up to 100):", 16);
+    }
+    else {
+      newGridSize = +prompt("Positive values only. Enter grid size (up to 100):", 16);
+    }
   }
   generateGrid(newGridSize);
 })
